@@ -32,7 +32,7 @@ if (isset($_POST['update_item_subcat'])) {
 if (isset($_POST['main_delete'])) {
         $delete_id = array_keys($_POST['main_delete']);
 	$sql2 = new db;
-    $sql2->db_Delete("aacgc_itemlist_subcat", "item_cat_id='".$delete_id[0]."'");
+    $sql2->db_Delete("aacgc_itemlist_subcat", "item_subcat_id='".$delete_id[0]."'");
 	
 }
 
